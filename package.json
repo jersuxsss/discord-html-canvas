@@ -1,0 +1,77 @@
+{
+    "name": "discord-html-canvas",
+    "version": "1.0.0",
+    "description": "Generate beautiful Discord images (rank cards, welcome images, etc.) from HTML/CSS instead of manual canvas manipulation. Library-agnostic support for discord.js and Eris.",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "tsc",
+        "test": "jest",
+        "test:watch": "jest --watch",
+        "test:coverage": "jest --coverage",
+        "lint": "eslint src/**/*.ts",
+        "format": "prettier --write \"src/**/*.ts\"",
+        "prepublishOnly": "npm run build"
+    },
+    "keywords": [
+        "discord",
+        "discord-bot",
+        "discord.js",
+        "eris",
+        "canvas",
+        "image-generation",
+        "html-to-image",
+        "rank-card",
+        "welcome-card",
+        "level-card",
+        "satori",
+        "html",
+        "css",
+        "svg",
+        "png",
+        "typescript",
+        "bot-framework"
+    ],
+    "author": {
+        "name": "Jersuxs",
+        "url": "https://github.com/jersuxsss"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jersuxsss/discord-html-canvas.git"
+    },
+    "bugs": {
+        "url": "https://github.com/jersuxsss/discord-html-canvas/issues"
+    },
+    "homepage": "https://github.com/jersuxsss/discord-html-canvas#readme",
+    "license": "MIT",
+    "dependencies": {
+        "satori": "^0.10.0",
+        "@resvg/resvg-js": "^2.6.0"
+    },
+    "peerDependencies": {
+        "discord.js": "^14.0.0",
+        "eris": "^0.17.0"
+    },
+    "peerDependenciesMeta": {
+        "discord.js": {
+            "optional": true
+        },
+        "eris": {
+            "optional": true
+        }
+    },
+    "devDependencies": {
+        "@types/jest": "^30.0.0",
+        "@types/node": "^18.0.0",
+        "@typescript-eslint/eslint-plugin": "^6.0.0",
+        "@typescript-eslint/parser": "^6.0.0",
+        "discord.js": "^14.25.1",
+        "eris": "^0.17.2",
+        "eslint": "^8.0.0",
+        "jest": "^30.2.0",
+        "prettier": "^3.0.0",
+        "ts-jest": "^29.4.5",
+        "typescript": "^5.0.0"
+    }
+}
